@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo"><img src="image/logo.png" alt="">Gym Dashboard</div>
+        <nav>
+          <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#" class="active">Billings</a></li>
+            <li><a href="#">Invoices</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Trainers</a></li>
+            <li><a href="#">Register Now</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <header>
+          <h1>Dashboard</h1>
+          <div class="date">Wednesday, 26 June 2024</div>
+        </header>
+        <section class="overview">
+          <div class="card">
+            <p>Active Members</p>
+            <h2>80</h2>
+          </div>
+          <div class="card">
+            <p>Total Members</p>
+            <h2>200</h2>
+          </div>
+          <div class="card">
+            <p>Trainers</p>
+            <h2>10</h2>
+          </div>
+        </section>
+        <section class="charts">
+          <div class="chart">
+            <h2>Men-Women Ratio</h2>
+            <div class="graph"><div class="img"><img src="image/Ratio.png" alt=""></div></div>
+          </div>
+          <div class="chart">
+            <h2>User Reviews</h2>
+            <div class="graph">
+              <div class="review-form">
+                  <h3>Leave a Review</h3>
+                  <form>
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" required>
+                      <label for="rating">Rating:</label>
+                      <select id="rating" name="rating" required>
+                          <option value="5">5 - Excellent</option>
+                          <option value="4">4 - Very Good</option>
+                          <option value="3">3 - Good</option>
+                          <option value="2">2 - Fair</option>
+                          <option value="1">1 - Poor</option>
+                      </select>
+                      <label for="review">Review:</label>
+                      <textarea id="review" name="review" rows="4" required></textarea>
+                      <button type="submit">Submit</button>
+                  </form></div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
